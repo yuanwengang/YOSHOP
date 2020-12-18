@@ -1,2 +1,20 @@
 <!--pages/All/All.wxml-->
-<text>pages/All/All.wxml</text>
+<van-search
+  value="{{ value }}"
+  shape="round"
+  placeholder="搜索商品"
+/>
+<van-sidebar active-key="{{ activeKey }}" bind:change="onChange" wx:for="{{SidebarArray}}" wx:key="index" custom-class="sidebar">
+  <van-sidebar-item title="全部" />
+  <van-sidebar-item title="{{item.name}}" />
+</van-sidebar>
+<van-notify id="van-notify" />
+<view wx:for="{{AllArray}}" wx:key="index">
+    <image src="{{item.goods_image}}"/>
+    <view>
+        <view>{{item.goods_name}}</view>
+        <view>已收{{item.goods_sales}}件</view>
+        <text>￥{{item.goods_sku.goods_price}}</text>
+        <text>￥{{item.goods_sku.line_price}}</text>
+    </view>
+</view>

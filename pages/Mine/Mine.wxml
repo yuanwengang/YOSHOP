@@ -1,2 +1,35 @@
 <!--pages/Mine/Mine.wxml-->
-<text>pages/Mine/Mine.wxml</text>
+<view class="root">
+    <view class="bg">
+        <img src="{{}}" alt=""/>
+        <text>{{}}</text>
+        <view class="dingdan">
+            <van-cell is-link title="我的订单" is-link value="全部订单" link-type="navigateTo" url="../MyOrder/MyOrder"/>
+<view class="order">
+    <text bindtap="dianji1">
+        <van-icon name="description" />
+        <text>全部订单</text>
+    </text>
+    <text bindtap="dianji2">
+        <van-icon name="pending-payment" />
+        <text>待付款</text>
+    </text>
+    <text bindtap="dianji3">
+        <van-icon name="logistics" />
+        <text>待发货</text>
+    </text>
+    <text bindtap="dianji4">
+        <van-icon name="records" />
+        <text>待收货</text>
+    </text>
+</view>
+        
+        
+    </view>
+    </view>
+    <view class="base">
+        <van-cell title="收货地址" icon="location-o" is-link />
+        <van-cell title="我的帮助" icon="question-o" is-link />
+        <van-cell title="联系客服" icon="service-o" is-link />
+        </view>
+</view>

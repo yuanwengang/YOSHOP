@@ -4,7 +4,9 @@
         "pages/All/All",
         "pages/Shopping-cart/Shopping",
         "pages/Mine/Mine",
-        "pages/Home/Particulars/particulars"
+        "pages/Particulars/particulars",
+        "pages/MyOrder/MyOrder",
+        "pages/Receiver_address/Receiver_address"
     ],
     "tabBar": {
         "list": [
@@ -32,6 +34,5 @@
         "navigationBarTitleText": "",
         "navigationBarTextStyle": "black"
     },
-    "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

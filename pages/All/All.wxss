@@ -1,1 +1,4 @@
 /* pages/All/All.wxss */
+.sidebar {
+    width: 60rpx;
+}

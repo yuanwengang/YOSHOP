@@ -1,27 +1,18 @@
-// pages/Home/Particulars/particulars.js
-import Api from "../../../api/api"
-import MyFetch from "../../../api/fetch"
+// pages/Receiver_address/Receiver_address.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        itemObj:""
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(options);
-        let itemObj = options
-        console.log(itemObj)
-        MyFetch({url:Api.firewormUrl+"//index.php?s=/api/index/page&wxapp_id=10001&token=8f7480921b1083b0df0554063b6d62b4?item="+itemObj}).then(res=>{
-            console.log(res)
-            
-    
-        })
+
     },
 
     /**

@@ -14,7 +14,7 @@ Page({
 
     Related(e){
         wx.navigateTo({
-          url: '../Home/Particulars/particulars?item='+e.currentTarget.dataset.item,
+          url: '../Particulars/particulars?goods_id='+e.currentTarget.dataset.item,
         })
         console.log(e.currentTarget.dataset.item)
     },

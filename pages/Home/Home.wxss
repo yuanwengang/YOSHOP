@@ -1,7 +1,6 @@
 /* pages/Home/Home.wxss */
 .root{
-    background-color: #DCDCDC;
-    
+    background-color: #DCDCDC; 
 }
 swiper{
     width: 100%;

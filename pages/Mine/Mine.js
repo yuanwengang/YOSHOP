@@ -1,4 +1,6 @@
 // pages/Mine/Mine.js
+import MyFetch from "../../api/fetch";
+import Api from '../../api/api';
 Page({
 
     /**
@@ -7,12 +9,34 @@ Page({
     data: {
 
     },
-
+    dianji1(){
+        wx.navigateTo({
+          url: '../MyOrder/MyOrder',
+        })
+    },
+    dianji2(){
+        wx.navigateTo({
+          url: '../MyOrder/MyOrder',
+        })
+    },
+    dianji3(){
+        wx.navigateTo({
+          url: '../MyOrder/MyOrder',
+        })
+    },
+    dianji4(){
+        wx.navigateTo({
+          url: '../MyOrder/MyOrder',
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        MyFetch({url:Api.firewormUrl+"/index.php?s=/api/user.index/detail&wxapp_id=10001&token=b8c8563d16160dd4e48dc958aa142fd4"}).then(res=>{
+            console.log(res.data.data)
 
+        })
     },
 
     /**
