@@ -1,0 +1,100 @@
+/* pages/Home/Home.wxss */
+.root{
+    background-color: #DCDCDC;
+    
+}
+swiper{
+    width: 100%;
+    height: 500rpx;
+  }
+  swiper image{
+    width: 100%;
+    height: 100%;
+  }
+  /* 新品推荐 */
+.header{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.header-title{
+  text-align: center;
+  
+  font-weight: bold;
+  padding-top: 25rpx;
+}
+.news{
+   width: 100%; 
+    overflow-x:scroll;
+}
+.small{
+    width: 300%;
+   
+}
+.news-item{
+    background-color: #fff;
+    float: left;
+    width: 175rpx;
+    height: 300rpx;
+    overflow-x: scroll; 
+    overflow: hidden;
+    white-space: nowrap;
+    /* margin: 10rpx; */
+    
+}
+.news::-webkit-scrollbar {
+  display: none;
+}
+.news-item image{
+    border:2rpx solid rgb(243, 241, 241);
+    width: 150rpx;
+    height: 150rpx;
+    margin: 20rpx;
+    border-radius: 4rpx;
+}
+.title{
+    width: 150rpx;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.price{
+  color: #FF0000;
+  margin-left: 20rpx;
+}
+
+/* 猜您喜欢 */
+.xian{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30rpx 0;
+}
+.Related{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.Related image{
+  width: 100%;
+}
+.Related-price{
+  color: #FF0000;
+}
+.Related-top{
+  width:49%;
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+/* 底部 */
+.bast{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+}

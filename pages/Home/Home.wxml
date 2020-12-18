@@ -1,0 +1,38 @@
+<!--pages/Home/Home.wxml-->
+<view class="root">
+    <view class="inp">
+        <van-search type="text" placeholder="搜索商品"/>
+    </view>
+    <!-- 轮播图 -->
+    <swiper indicator-dots='true' indicator-color='red' 
+    circular="true"
+    indicator-active-color='yellow' autoplay='true'>
+    <swiper-item wx:for="{{lunboObj}}" wx:key="index">
+      <image src='{{item.imgUrl}}'/>
+    </swiper-item>
+  </swiper>
+  <!-- 新品推荐 -->
+  <view class="header">
+    <view class="header-title">新品推荐</view>
+      <view class="news">
+      <view class="small">
+          <view wx:for="{{newestArray}}" wx:key="index" class="news-item">
+        <image src='{{item.image[0].file_path}}'/>
+      <view class="title">{{item.goods_name}}</view>
+      <view class="price">￥{{item.spec[0].goods_price}}</view>
+    </view>
+  </view>
+   </view>
+  </view>
+  <!-- 猜你喜欢 -->
+  <view class="xian">————猜你喜欢————</view>
+  <view class="Related">
+    <view class="Related-top" wx:for="{{RelatedArray}}" wx:key="index" bindtap="Related" data-item="{{item.goods_id}}">
+        <image src="{{item.image[0].file_path}}"/>
+    <view class="Related-title">{{item.goods_name}}</view>
+    <view class="Related-price">￥{{item.spec[0].goods_price}}</view>
+    </view>
+  </view>
+    <!-- 我也是有底线的 -->
+    <view class="bast">————我也是有底线的————</view>
+</view>
